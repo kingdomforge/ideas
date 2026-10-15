@@ -1,0 +1,39 @@
+name: "Something that annoys you, or a mod you wish existed"
+description: Tell KingdomForge about something in Minecraft that annoys you, or a mod you wish existed.
+title: "Idea: "
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing an idea. Every idea is read. The good ones may become a mod, but there is no promise about timing.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What annoys you, or what mod do you wish existed?
+      description: A few plain words are enough.
+      placeholder: For example, "I keep losing my items when ..." or "I wish there was a mod that ..."
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How should it work in the game?
+      description: Optional. What would you see or do? What would be different?
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Minecraft version and loader you play
+      description: Optional.
+      placeholder: For example, 1.21.1 with Fabric or NeoForge
+    validations:
+      required: false
+  - type: textarea
+    id: mods
+    attributes:
+      label: Mods or modpack you play with
+      description: Optional.
+    validations:
+      required: false
